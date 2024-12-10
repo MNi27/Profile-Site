@@ -4,6 +4,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 h1 {
@@ -18,20 +19,21 @@ h2 {
     font-size: 2rem;
     color: #444;
     font-family: 'Arial', sans-serif;
-    text-align: left;
+    text-align: center;
     margin-bottom: 15px;
 }
 
 h3 {
     font-size: 1.5rem;
     color: #555;
+    text-align:center;
     font-family: 'Arial', sans-serif;
     margin-bottom: 10px;
 }
 
 nav {
     display: flex;
-    justify-content: left; 
+    justify-content: center; 
     background-color: #a39e9e;
     padding: 10px; /
 }
@@ -75,9 +77,9 @@ nav a:active {
 }
 
 img {
-    width: 60%;
-    height: 60%;
+    width: 65%;
+    height: 65%;
     object-fit: contain;
-    max-width: 500px;
+    max-width: 600px;
     max-height: 500px;
 }
