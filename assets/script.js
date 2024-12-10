@@ -35,21 +35,22 @@ function removeHighlight(element) {
 
 
 //Slideshow for pictures
-let currentIndex = 0;
+document.addEventListener("DOMContentLoaded", () => {
+    const images = ["assets/1ProjectA.jpg", "assets/1ProjectB.jpg", "assets/1ProjectC.jpg", "assets/1ProjectD.jpg"];
+    let currentIndex = 0;
 
-const images = ["assets/1ProjectA.jpg", "assets/1ProjectB.jpg", "assets/1ProjectC.jpg", "assets/1ProjectD.jpg"];
+    const imgElement = document.getElementById("project-image");
+    const updateImage = () => (imgElement.src = images[currentIndex]);
 
-function updateImage() {
-    document.getElementById("project-image").src = images[currentIndex];
-}
+    document.getElementById("prev-btn").addEventListener("click", () => {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        updateImage();
+    });
 
-function prevImage() {
-    currentIndex = (currentIndex - 1 + images.length) % images.length;
-    updateImage();
-}
+    document.getElementById("next-btn").addEventListener("click", () => {
+        currentIndex = (currentIndex + 1) % images.length;
+        updateImage();
+    });
 
-function nextImage() {
-    currentIndex = (currentIndex + 1) % images.length;
-    updateImage();
-}
-
+    updateImage(); // Initialize with the first image
+});
