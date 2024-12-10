@@ -1,4 +1,5 @@
 body {
+    background-color: #cac4c4;
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
@@ -7,4 +8,47 @@ body {
 nav a {
     margin: 0 15px;
     text-decoration: none;
+}
+
+.nav {
+    background-color: #333; /* Dark background */
+    color: #fff; /* White text */
+    padding: 1rem; /* Padding around the text */
+    text-align: center; /* Center the text */
+    border-bottom: 2px solid #555; /* Border at the bottom */
+}
+.nav a {
+    color: #fff;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+.nav a:hover {
+    background-color: #555; /* Darker background on hover */
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+.button:hover {
+    background-color: #45a049; /* Darker green */
+}
+
+img {
+    width: 350px;
+    height: 350px; 
+    object-fit: cover; 
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    margin: 10px; /
 }
