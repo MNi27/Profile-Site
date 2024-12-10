@@ -1,17 +1,28 @@
 // Greetings
-function displayGreeting() {
-    const hours = new Date().getHours();
-    let greeting = "Salutations my good fellow!";
-    if (hours < 12) {
-        greeting = "Good Morning!";
-    } else if (hours < 18) {
-        greeting = "Good Afternoon!";
-    } else {
-        greeting = "Good Evening!";
+document.addEventListener("DOMContentLoaded", () => {
+    function displayGreeting() {
+        const hours = new Date().getHours();
+        let greeting;
+
+        if (hours < 12) {
+            greeting = "Good morning!";
+        } else if (hours < 18) {
+            greeting = "Good afternoon!";
+        } else {
+            greeting = "Good evening!";
+        }
+
+        const greetingElement = document.getElementById("greeting");
+        if (greetingElement) {
+            greetingElement.textContent = greeting;
+        } else {
+            console.error("Element with ID 'greeting' not found.");
+        }
     }
-    document.getElementById("greeting").innerText = greeting;
-}
-displayGreeting();
+
+    displayGreeting();
+});
+
 
 //A button to show more information
 function toggleInfo() {
