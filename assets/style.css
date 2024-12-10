@@ -5,30 +5,37 @@ body {
     margin: 0;
     padding: 0;
 }
-nav a {
-    margin: 0 15px;
-    text-decoration: none;
+
+nav {
+    display: flex;
+    justify-content: center; 
+    background-color: #333;
+    padding: 10px; /
 }
 
-.nav {
-    background-color: #333; /* Dark background */
-    color: #fff; /* White text */
-    padding: 1rem; /* Padding around the text */
-    text-align: center; /* Center the text */
-    border-bottom: 2px solid #555; /* Border at the bottom */
-}
-.nav a {
-    color: #fff;
-    padding: 14px 20px;
+nav a {
     text-decoration: none;
-    display: inline-block;
+    color: white;
+    background-color: #007BFF;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
 }
-.nav a:hover {
-    background-color: #555; /* Darker background on hover */
+
+nav a:hover {
+    background-color: #0056b3;
 }
+
+nav a:active {
+    background-color: #003f7f;
+}
+
 
 .button {
-    background-color: #4CAF50; /* Green */
+    background-color: #4CAF50;
     color: white;
     padding: 10px 20px;
     text-align: center;
@@ -41,12 +48,13 @@ nav a {
     border-radius: 5px;
 }
 .button:hover {
-    background-color: #45a049; /* Darker green */
+    background-color: #45a049;
 }
 
 img {
     width: 60%;
     height: 60%;
     object-fit: contain;
-    max-width: 400px;
+    max-width: 500px;
+    max-height: 500px;
 }
