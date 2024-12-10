@@ -23,7 +23,25 @@
         <p>I am currently in my second year of study in the University of Hertfordshire.</p>
         <p>I look to finish my Information Technology course and earn my Bachelor of Science (with Honours) degree in the coming year.</p>
         <p>I love reading and playing video games in my spare time.</p>
-        <img src="assets/StillMe.jpg" alt="Your image" width="200" height="300">
+        <button onclick="toggleInfo()">Me</button>
+        <p id="more-info" style="display:none;">
+            <img src="assets/StillMe.jpg" alt="My face" id="myFaceImage" style="width: 190px; height: 190px;">
+        </p>
+        
+        <script>
+  function toggleInfo() {
+    const moreInfo = document.getElementById('more-info');
+    const image = document.getElementById('myFaceImage');
+
+    if (moreInfo.style.display === 'none') {
+      moreInfo.style.display = 'block';
+      image.style.width = '190px';
+      image.style.height = '190px';
+    } else {
+      moreInfo.style.display = 'none';
+    }
+  }
+</script>
     </main>
     <script src="assets/script.js"></script>
     <footer>

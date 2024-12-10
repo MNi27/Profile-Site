@@ -45,23 +45,43 @@ function removeHighlight(element) {
 
 
 
-//Slideshow for pictures
 document.addEventListener("DOMContentLoaded", () => {
-    const images = ["assets/1ProjectA.jpg", "assets/1ProjectB.jpg", "assets/1ProjectC.jpg", "assets/1ProjectD.jpg"];
-    let currentIndex = 0;
+    //Project 1 Slideshow
+    const images1 = ["assets/1ProjectA.jpg", "assets/1ProjectB.jpg", "assets/1ProjectC.jpg", "assets/1ProjectD.jpg"];
+    let currentIndex1 = 0;
+    const imgElement1 = document.getElementById("project1-image");
 
-    const imgElement = document.getElementById("project-image");
-    const updateImage = () => (imgElement.src = images[currentIndex]);
+    const updateImage1 = () => (imgElement1.src = images1[currentIndex1]);
 
-    document.getElementById("prev-btn").addEventListener("click", () => {
-        currentIndex = (currentIndex - 1 + images.length) % images.length;
-        updateImage();
+    document.getElementById("prev-btn1").addEventListener("click", () => {
+        currentIndex1 = (currentIndex1 - 1 + images1.length) % images1.length;
+        updateImage1();
     });
 
-    document.getElementById("next-btn").addEventListener("click", () => {
-        currentIndex = (currentIndex + 1) % images.length;
-        updateImage();
+    document.getElementById("next-btn1").addEventListener("click", () => {
+        currentIndex1 = (currentIndex1 + 1 + images1.length) % images1.length;
+        updateImage1();
     });
 
-    updateImage(); // Initialize with the first image
+    updateImage1();
+
+    //Project 2 Slideshow
+    const images2 = ["assets/2ProjectA.jpg", "assets/2ProjectB.jpg", "assets/2ProjectC.jpg", "assets/2ProjectD.jpg", "assets/2ProjectE.jpg", "assets/2ProjectF.jpg", "assets/2ProjectG.jpg"];
+    let currentIndex2 = 0;
+    const imgElement2 = document.getElementById("project2-image");
+
+    const updateImage2 = () => (imgElement2.src = images2[currentIndex2]);
+
+    document.getElementById("prev-btn2").addEventListener("click", () => {
+        currentIndex2 = (currentIndex2 - 1 + images2.length) % images2.length;
+        updateImage2();
+    });
+
+    document.getElementById("next-btn2").addEventListener("click", () => {
+        currentIndex2 = (currentIndex2 + 1 + images2.length) % images2.length;
+        updateImage2();
+    });
+
+    updateImage2();
 });
+
