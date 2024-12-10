@@ -1,2 +1,2 @@
 # Profile-Site
-A little bit about myself
+A site about my academic self.
