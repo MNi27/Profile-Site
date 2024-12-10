@@ -35,8 +35,9 @@ function removeHighlight(element) {
 
 
 //Slideshow for pictures
-const images = ["assets/1ProjectA.jpg", "assets/1ProjectB.jpg", "assets/1ProjectC.jpg", "assets/1ProjectD.jpg"];
 let currentIndex = 0;
+
+const images = ["assets/1ProjectA.jpg", "assets/1ProjectB.jpg", "assets/1ProjectC.jpg", "assets/1ProjectD.jpg"];
 
 function updateImage() {
     document.getElementById("project-image").src = images[currentIndex];
