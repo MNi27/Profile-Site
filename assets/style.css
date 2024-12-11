@@ -41,7 +41,7 @@ nav {
 nav a {
     text-decoration: none;
     color: white;
-    background-color: #109e42;
+    background-color: #0B5B27;
     padding: 10px 20px;
     margin: 0 10px;
     border-radius: 5px;
@@ -51,11 +51,11 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #0e8f3b;
+    background-color: #0f4421;
 }
 
 nav a:active {
-    background-color: #12b74c;
+    background-color: #073d1a;
 }
 
 
