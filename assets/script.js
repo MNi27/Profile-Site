@@ -1,4 +1,4 @@
-// Greetings
+//Greetings
 document.addEventListener("DOMContentLoaded", () => {
     function displayGreeting() {
         const hours = new Date().getHours();
